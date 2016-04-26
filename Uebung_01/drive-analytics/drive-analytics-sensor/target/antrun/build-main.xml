@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy file="C:\Public\SWT6\workspace\HÜ_01\drive-analytics\drive-analytics-sensor\target/drive-analytics-sensor-1.0.jar" todir="C:\Public\SWT6\bin\apache-karaf-4.0.4/deploy"/>
+</target>
+</project>

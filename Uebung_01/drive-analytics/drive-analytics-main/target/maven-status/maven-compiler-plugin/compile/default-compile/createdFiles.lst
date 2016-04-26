@@ -1,0 +1,12 @@
+swt6\util\TimerEvent.class
+swt6\util\TimerBean.class
+swt6\util\SensorTrackerCustomizer$1.class
+swt6\util\SensorListenerService$1.class
+swt6\util\JavaFxUtils.class
+swt6\osgi\app\Dashboard$1.class
+swt6\util\SensorTrackerCustomizer$Action.class
+swt6\osgi\app\Dashboard.class
+swt6\util\SensorListenerService.class
+swt6\util\SensorTrackerCustomizer.class
+swt6\osgi\app\AppActivator.class
+swt6\util\TimerListener.class

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+	<EMPLOYEE ID="1" FIRSTNAME="Hugo" LASTNAME="Franz" ADDRESS_ZIPCODE="4020" ADDRESS_STREET="Wienerstraße" ADDRESS_CITY="Linz"/>
+	<EMPLOYEE ID="2" FIRSTNAME="Marry" LASTNAME="Page" ADDRESS_ZIPCODE="4040" ADDRESS_STREET="KeineStraße" ADDRESS_CITY="Große Stadt"/>
+	
+	<LOGBOOKENTRY ID="1" ACTIVITY="nothing todo"  EMPLOYEE_ID="1"/>
+	
+	<PROJECT ID="1" NAME="Projekt undefiniert"/>
+	<PROJECT ID="2" NAME="Projekt geheim"/>
+	
+	<PROJECTEMPLOYEE EMPLOYEE_ID="1" PROJECT_ID="1"/>
+	<PROJECTEMPLOYEE EMPLOYEE_ID="1" PROJECT_ID="2"/>
+	<PROJECTEMPLOYEE EMPLOYEE_ID="2" PROJECT_ID="2"/>
+	
+	
+</dataset>
