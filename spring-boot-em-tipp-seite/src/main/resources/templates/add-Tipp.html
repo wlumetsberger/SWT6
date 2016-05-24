@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+<title>App Title</title>
+</head>
+
+<body role="document">
+	<div th:replace="layout :: navBar">Navigation Bar</div>
+
+	<div class="container">
+		<div class="page-title"><h1>Tipp Hinzufügen </h1> </div>
+
+		<form th:object="${entry}" method="post">
+			<input type="hidden" th:field="*{id}" />
+			<input type="hidden" th:field="*{spiel}"/>
+			<div class="row">
+				<div class="form-group col-sm-12">
+					<label for="Spieler">Spieler:</label>
+					<select id="teamA" th:field="*{user}" class="form-control">
+						<option th:each="user : ${users}"
+								th:value="${user.email}"
+								th:label="${user.name}"/>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-sm-6">
+					<label for="teamA">Tore Team A:</label>
+					<input id="teamA" type="number" th:field="*{tippToreA}"/>
+					
+				</div>
+				<div class="form-group col-sm-6">
+					<label for="teamB">Tore Team B:</label>
+					<input id="teamB" type="number" th:field="*{tippToreB}"/>
+				</div>
+			</div>
+		
+			<input type="submit"
+				th:value="${entry.id == null ? 'Speichern' : 'Update'}"
+				class="btn btn-success" />
+
+		</form>
+	</div>
+	<div th:replace="layout :: scripts"></div>
+</body>
+</html>
